@@ -1,0 +1,4 @@
+C:\Users\Johny Theilor\OneDrive\Desktop\PJs\eUseControl\eUseControl.web\obj\Debug\eUseControl.web.csprojAssemblyReference.cache
+C:\Users\Johny Theilor\OneDrive\Desktop\PJs\eUseControl\eUseControl.web\obj\Debug\eUseControl.web.csproj.CoreCompileInputs.cache
+C:\Users\Gorea Andrei\Desktop\UTM\Anul 2\Semestrul 2\Tehnologii WEB\Project\Repaired\PJs\eUseControl\eUseControl.web\obj\Debug\eUseControl.web.csproj.AssemblyReference.cache
+C:\Users\Gorea Andrei\Desktop\UTM\Anul 2\Semestrul 2\Tehnologii WEB\Project\Repaired\PJs\eUseControl\eUseControl.web\obj\Debug\eUseControl.web.csproj.CoreCompileInputs.cache

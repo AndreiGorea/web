@@ -1,0 +1,48 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <meta name="description" content="Ogani Template">
+     <meta name="keywords" content="Ogani, unica, creative, html">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>@ViewBag.Title - My store in ASP.NET</title>
+
+     <!-- Google Font -->
+     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+     @Styles.Render("~/bundles/bootstrap")
+     @Styles.Render("~/bundles/font-awesome")
+     @Styles.Render("~/bundles/owl/carousel")
+     @Styles.Render("~/bundles/main/css")
+     @Styles.Render("~/bundles/elegant-icons")
+     @Styles.Render("~/bundles/nice-select")
+     @Styles.Render("~/bundles/jquery-ui")
+     @Styles.Render("~/bundles/slick")
+
+     <!-- Add local styles, mostly for plugins css file -->
+     @if (IsSectionDefined("Styles"))
+     {@RenderSection("Styles", required: false)}
+
+     <!-- Primary HOME style -->
+     @Styles.Render("~/bundles/main/css")
+</head>
+<body>
+     @Html.Partial("_Header")
+     @RenderBody()
+     @Html.Partial("_Footer_Section")
+
+
+     @Scripts.Render("~/bundles/bootstrap/js")
+     @Scripts.Render("~/bundles/main/js")
+     @Scripts.Render("~/bundles/owl-carousel/js")
+     @Scripts.Render("~/bundles/jquery-ui/js")
+     @Scripts.Render("~/bundles/jquery/js")
+     @Scripts.Render("~/bundles/jquery/nice-select/js")
+     @Scripts.Render("~/bundles/jquery/slicknav/js")
+     @Scripts.Render("~/bundles/mixitup/js")
+     @RenderSection("scripts", required: false)
+</body>
+</html>

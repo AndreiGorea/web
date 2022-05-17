@@ -1,0 +1,92 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <meta name="description" content="Ogani Template">
+     <meta name="keywords" content="Ogani, unica, creative, html">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>@ViewBag.Title - My store in ASP.NET</title>
+
+     <!-- Google Font -->
+     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+     @Styles.Render("~/bundles/bootstrap")
+     @Styles.Render("~/bundles/font-awesome")
+     @Styles.Render("~/bundles/owl/carousel")
+     @Styles.Render("~/bundles/main/css")
+     @Styles.Render("~/bundles/elegant-icons")
+     @Styles.Render("~/bundles/nice-select")
+     @Styles.Render("~/bundles/jquery-ui")
+     @Styles.Render("~/bundles/slick")
+
+     <!-- Add local styles, mostly for plugins css file -->
+     @if (IsSectionDefined("Styles"))
+     {@RenderSection("Styles", required: false)}
+
+     <!-- Primary HOME style -->
+     @Styles.Render("~/bundles/main/css")
+</head>
+
+<body>
+     <!-- Page Preloder -->
+     @*<div id="preloder">
+               @Html.Partial("_Preloder")
+          </div>*@
+     <!-- Page Preloder End -->
+     <!-- Humburger Begin -->
+     <div class="humberger__menu__overlay">
+          @Html.Partial("_Hamburger")
+     </div>
+     <!-- Humberger End -->
+     <!-- Header Section Begin -->
+     <header class="header">
+          @Html.Partial("_Header")
+     </header>
+     <!-- Header Section End -->
+     <!-- Hero Section Begin -->
+     <section class="hero">
+          @Html.Partial("_Hero_Section")
+     </section>
+     <!-- Hero Section End -->
+     <!-- Categories Section Begin -->
+     <section class="categories">
+          @Html.Partial("_Categories_Section")
+     </section>
+     <!-- Categories Section End -->
+
+     <content>
+          <!-- Featured Section Begin -->
+          <section class="featured spad">
+               @RenderBody()
+          </section>
+          <!-- Latest Product Section End -->
+
+     </content>
+
+     <!-- Blog Section Begin -->
+     <section class="from-blog spad">
+          @Html.Partial("_Blog_Section")
+     </section>
+     <!-- Blog Section End -->
+     <!-- Footer Section Begin -->
+     <footer class="footer spad">
+          @Html.Partial("_Footer_Section")
+     </footer>
+     <!-- Footer Section End -->
+     <!-- Handler for local scripts -->
+
+
+     @Scripts.Render("~/bundles/bootstrap/js")
+     @Scripts.Render("~/bundles/main/js")
+     @Scripts.Render("~/bundles/owl-carousel/js")
+     @Scripts.Render("~/bundles/jquery-ui/js")
+     @Scripts.Render("~/bundles/jquery/js")
+     @Scripts.Render("~/bundles/jquery/nice-select/js")
+     @Scripts.Render("~/bundles/jquery/slicknav/js")
+     @Scripts.Render("~/bundles/mixitup/js")
+     
+</body>
+</html>
